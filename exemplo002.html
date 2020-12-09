@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="10centavos" type="number" placeholder="Moedas de 10 centavos"/>
+    <input id="25centavos" type="number" placeholder="Moedas de 25 centavos"/>
+    <input id="50centavos" type="number" placeholder="Moedas de 50 centavos"/>
+    <input id="1moeda" type="number" placeholder="Moedas de 1 real"/>
+
+    <button onclick="CalcularTotal()">Calcular</button>
+
+    <script>
+    
+            
+
+        function CalcularTotal(){
+            var quantidadeMoedas10 = document.getElementById("10centavos").value
+            var quantidadeMoedas25 = document.getElementById("25centavos").value
+            var quantidadeMoedas50 = document.getElementById("50centavos").value
+            var quantidadeMoedas1 = document.getElementById("1moeda").value
+
+            var total10 = parseFloat(quantidadeMoedas10 * 0.10)
+            var total25 = parseFloat(quantidadeMoedas10 * 0.25)
+            var total50 = parseFloat(quantidadeMoedas10 * 0.50)
+            var total1 = parseFloat(quantidadeMoedas10 * 1)
+
+            var total = parseFloat(total10 + total25 + total50 + total1)
+            alert(total)
+
+
+       }
+    </script>
+</body>
+</html>
